@@ -2,7 +2,7 @@
 queue: normal
 project: fp0
 walltime: 20:00
-ncpus: 960
+ncpus: 480
 qsub_flags: -lother=hyperthread
 
 # Model config
