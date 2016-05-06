@@ -77,7 +77,6 @@
 /
 
  &ice_model_nml
-    layout = 32, 30
 /
 
  &icebergs_nml
