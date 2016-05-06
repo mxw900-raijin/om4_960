@@ -1,0 +1,32 @@
+# PBS flags
+queue: normal
+project: fp0
+walltime: 20:00
+ncpus: 960
+qsub_flags: -lother=hyperthread
+
+# Model config
+model: mom6
+exe: MOM6
+input: om4_025
+
+collate: False
+collate_walltime: 4:00:00
+collate_mem: 6GB
+
+repeat: True
+
+##mpi:
+##    module: openmpi/1.8.7-debug
+#
+#env:
+#    SCOREP_TOTAL_MEMORY: 1073741824
+#    SCOREP_MPI_ENABLE_GROUPS: all
+#    SCOREP_METRIC_RUSAGE: all
+#    #SCOREP_FILTERING_FILE: /short/fp0/mxw900/scorep_filter.txt
+##    SCOREP_METRIC_PAPI: PAPI_TOT_CYC,PAPI_L3_TCM,PAPI_L3_TCA
+##    NC_BLKSZ: 524288
+#
+#mpirun:
+#    - -mca orte_base_help_aggregate 0
+#    - -mca btl_openib_abort_not_enough_reg_mem 1
