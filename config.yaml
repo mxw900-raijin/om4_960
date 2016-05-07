@@ -7,7 +7,8 @@ qsub_flags: -lother=hyperthread
 
 # Model config
 model: mom6
-exe: mom6_scorep
+#exe: mom6_scorep
+exe: MOM6
 input: om4_025
 
 collate: False
