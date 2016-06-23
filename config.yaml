@@ -17,6 +17,8 @@ collate_mem: 6GB
 
 repeat: True
 
+ipm: True
+
 ##mpi:
 ##    module: openmpi/1.8.7-debug
 #
